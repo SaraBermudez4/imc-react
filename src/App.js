@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CalculadorApp from './components/calculator/CalculadorApp'
+import Copyrigth from './components/pages/Copyrigth'
+import SocialMedia from './components/pages/SocialMedia'
+import Footer from './Containers/Footer'
+import Header from './Containers/Header'
+import Main from './Containers/Main'
+import bascula from './images/bascula-dibujo.png'
+import { Container } from 'react-bootstrap'
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import './sass/style.scss';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container fluid>
+        <Header title="Calculo de indice de masa corporal" />
+        <Main>
+          <CalculadorApp bascula={bascula} />
+        </Main>
+        <Footer>
+          <SocialMedia />
+          <Copyrigth />
+        </Footer>
+      </Container>
+    </>
   );
 }
 
