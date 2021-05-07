@@ -1,28 +1,44 @@
 import React, { Component } from 'react'
+import Formulario from './FormularioCalculo'
+import VerIMC from './VerCalculoIMC'
+import Bascula from './BasculaIMC'
 import { Card, Col, Row } from 'react-bootstrap'
-import BasculaIMC from './BasculaIMC'
-import FormularioCalculo from './FormularioCalculo'
-import VerCalculoIMC from './VerCalculoIMC'
 class CuerpoCalculo extends Component {
-    render() {
-        return (
-            <>
-                <Card.Body>
-                    <Row>
-                        <Col>
-                            <FormularioCalculo />
-                        </Col>
-                        <Col>
-                            <VerCalculoIMC estatura={1.60} peso={50} />
-                        </Col>
-                        <Col>
-                            <BasculaIMC bascula={this.props.bascula} />
-                        </Col>
-                    </Row>
-                </Card.Body>
-            </>
-        )
+
+  constructor(){
+    super()
+    this.state = {
+      estatura: 1.6,
+      peso: 50
     }
+  }
+
+  modificarDatosIMC = (campo, valor) => {
+    this.setState({[campo] : parseFloat(valor)})
+  }
+
+  verDatoIMC = (campo) => this.state[campo] 
+
+
+  render () {
+    return (
+      <>
+        <Card.Body>
+          <Row>
+            <Col>
+              <Formulario modificarDatosIMC = {this.modificarDatosIMC} verDatoIMC = {this.verDatoIMC}/>
+            </Col>
+            <Col>
+              <VerIMC estatura={this.state.estatura} peso={this.state.peso} />
+            </Col>
+            <Col>
+              <Bascula bascula={this.props.bascula} />
+            </Col>
+          </Row>
+        </Card.Body>
+      </>
+    )
+  }
 }
 
 export default CuerpoCalculo
