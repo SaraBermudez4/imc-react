@@ -39,8 +39,11 @@ const PreLoaded = styled.div`
 const Loading = () => {
     return (
         <PortalLoading>
-            <LoadDiv />
-            <PreLoaded />
+            {visible ? (
+            <LoadDiv>
+                <PreLoaded />
+            </LoadDiv>
+            ) : null }
         </PortalLoading>
     )
 }
