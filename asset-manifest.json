@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/imc-react/static/css/main.94a39868.chunk.css",
+    "main.js": "/imc-react/static/js/main.3e838aa5.chunk.js",
+    "main.js.map": "/imc-react/static/js/main.3e838aa5.chunk.js.map",
+    "runtime-main.js": "/imc-react/static/js/runtime-main.1e20ba94.js",
+    "runtime-main.js.map": "/imc-react/static/js/runtime-main.1e20ba94.js.map",
+    "static/js/2.09135253.chunk.js": "/imc-react/static/js/2.09135253.chunk.js",
+    "static/js/2.09135253.chunk.js.map": "/imc-react/static/js/2.09135253.chunk.js.map",
+    "static/js/3.2b4cdbf7.chunk.js": "/imc-react/static/js/3.2b4cdbf7.chunk.js",
+    "static/js/3.2b4cdbf7.chunk.js.map": "/imc-react/static/js/3.2b4cdbf7.chunk.js.map",
+    "index.html": "/imc-react/index.html",
+    "static/css/main.94a39868.chunk.css.map": "/imc-react/static/css/main.94a39868.chunk.css.map",
+    "static/js/2.09135253.chunk.js.LICENSE.txt": "/imc-react/static/js/2.09135253.chunk.js.LICENSE.txt",
+    "static/media/bascula-dibujo.47d0e59d.png": "/imc-react/static/media/bascula-dibujo.47d0e59d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e20ba94.js",
+    "static/js/2.09135253.chunk.js",
+    "static/css/main.94a39868.chunk.css",
+    "static/js/main.3e838aa5.chunk.js"
+  ]
+}
